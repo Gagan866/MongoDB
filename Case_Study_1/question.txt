@@ -1,0 +1,29 @@
+✅ Case Study 1: E-Commerce Product Catalog
+Case:
+An online store uses MongoDB to manage its product catalog. Each product document includes fields like:
+
+json
+Copy
+Edit
+{
+  "_id": ObjectId("..."),
+  "name": "Wireless Mouse",
+  "category": "Electronics",
+  "price": 699,
+  "stock": 120,
+  "ratings": [4, 5, 5, 3, 4],
+  "tags": ["computer", "accessory", "wireless"],
+  "created_at": ISODate("2024-08-10T10:00:00Z")
+}
+Questions:
+
+Which data type is best suited for the ratings field, and why?
+
+Write a query to find all products in the Electronics category with a stock less than 50.
+
+How would you update all products tagged as "wireless" to also include the tag "bluetooth"?
+
+What MongoDB operator can you use to calculate the average rating of each product?
+
+If you want to automatically delete documents older than 1 year from the created_at field, what MongoDB feature would you use?
+
