@@ -17,8 +17,6 @@ Edit
 }
 Questions:
 
-Which data type is best suited for the ratings field, and why?
-
 Write a query to find all products in the Electronics category with a stock less than 50.
 
 How would you update all products tagged as "wireless" to also include the tag "bluetooth"?
