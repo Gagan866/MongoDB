@@ -1,4 +1,4 @@
-✅ Case Study 1: E-Commerce Product Catalog
+Study 1: E-Commerce Product Catalog
 Case:
 An online store uses MongoDB to manage its product catalog. Each product document includes fields like:
 
