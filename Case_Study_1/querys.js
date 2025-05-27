@@ -1,4 +1,4 @@
-Q2: Find all products in the Electronics category with a stock less than 50
+Q1: Find all products in the Electronics category with a stock less than 50
 
 db.products.find({
   category: "Electronics",
@@ -6,7 +6,7 @@ db.products.find({
 });
 
 
-Q3: Update all products tagged as "wireless" to also include "bluetooth"
+Q2: Update all products tagged as "wireless" to also include "bluetooth"
 
 db.products.updateMany(
   { tags: "wireless", tags: { $ne: "bluetooth" } },
@@ -14,7 +14,7 @@ db.products.updateMany(
 );
 
 
-Q4: Calculate average rating of each product
+Q3: Calculate average rating of each product
 
 db.products.aggregate([
   {
@@ -26,7 +26,7 @@ db.products.aggregate([
 ]);
 
 
-Q5: Automatically delete documents older than 1 year based on created_at
+Q4: Automatically delete documents older than 1 year based on created_at
 
 db.products.createIndex(
   { created_at: 1 },

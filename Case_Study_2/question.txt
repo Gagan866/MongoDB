@@ -1,0 +1,28 @@
+✅ Case Study 2: Social Media Posts
+Case:
+A social media platform stores posts in a posts collection. A sample document looks like:
+
+json
+Copy
+Edit
+{
+  "_id": ObjectId("..."),
+  "user_id": "u123",
+  "content": "Loving MongoDB!",
+  "likes": 34,
+  "comments": [
+    {"user": "u234", "text": "Me too!", "timestamp": ISODate("2024-09-01T09:30:00Z")},
+    {"user": "u235", "text": "Same here!", "timestamp": ISODate("2024-09-01T10:00:00Z")}
+  ],
+  "tags": ["mongodb", "nosql"],
+  "created_at": ISODate("2024-09-01T09:00:00Z")
+}
+Questions:
+
+How would you retrieve posts that have the tag "nosql" but not "mongodb"?
+
+Write a query to return only the number of likes for each post (omit all other fields).
+
+Suppose you need to display the number of comments per post. What aggregation pipeline would you use?
+
+How would you ensure that only the latest 5 comments are retained in the document?
